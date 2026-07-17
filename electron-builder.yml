@@ -1,0 +1,165 @@
+appId: com.romulando.ingame-twitch-chat
+productName: Ingame Twitch Chat
+buildVersion: 1.0.0.0
+directories:
+  buildResources: build
+  output: dist
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  - '!build/**'
+asarUnpack:
+  - resources/**
+  - build/**
+
+nsis:
+  artifactName: Ingame-Twitch-Chat-${version}-setup.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  allowToChangeInstallationDirectory: true
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  runAfterFinish: true
+  # Configurações para auto-update
+  include: build/installer.nsh
+
+# Configurações para macOS
+mac:
+  icon: build/icon.icns
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+    - target: zip
+      arch:
+        - x64
+        - arm64
+  extendInfo:
+    NSCameraUsageDescription: Este aplicativo não solicita acesso à câmera do dispositivo.
+    NSMicrophoneUsageDescription: Este aplicativo não solicita acesso ao microfone do dispositivo.
+    NSDocumentsFolderUsageDescription: Este aplicativo não solicita acesso à pasta de Documentos do usuário.
+    NSDownloadsFolderUsageDescription: Este aplicativo não solicita acesso à pasta de Downloads do usuário.
+  notarize: false
+  hardenedRuntime: true
+  gatekeeperAssess: false
+dmg:
+  artifactName: Ingame-Twitch-Chat-${version}.${ext}
+  title: Ingame Twitch Chat ${version}
+  background: build/background.png
+  icon: build/icon.icns
+  iconSize: 80
+  contents:
+    - x: 410
+      y: 150
+      type: link
+      path: /Applications
+    - x: 130
+      y: 150
+      type: file
+
+# Configurações para Linux
+linux:
+  icon: build/icon.png
+  target:
+    - target: AppImage
+      arch:
+        - x64
+    - target: snap
+      arch:
+        - x64
+    - target: deb
+      arch:
+        - x64
+    - target: rpm
+      arch:
+        - x64
+  maintainer: devrogerinho.com
+  category: Network
+  description: Aplicativo de chat para Twitch, YouTube e Kick
+  synopsis: Chat multiplataforma para streamers
+  desktop:
+    Name: Ingame Twitch Chat
+    Comment: Chat multiplataforma para streamers
+    Keywords: chat;twitch;youtube;kick;streaming;
+    Categories: Network;Chat;
+    StartupWMClass: Ingame Twitch Chat
+appImage:
+  artifactName: Ingame-Twitch-Chat-${version}.${ext}
+snap:
+  artifactName: Ingame-Twitch-Chat-${version}.${ext}
+  grade: stable
+  confinement: strict
+  environment:
+    DISABLE_WAYLAND: 1
+deb:
+  artifactName: Ingame-Twitch-Chat-${version}.${ext}
+  depends:
+    - libgtk-3-0
+    - libnotify4
+    - libnss3
+    - libxss1
+    - libxtst6
+    - xdg-utils
+    - libatspi2.0-0
+    - libdrm2
+    - libxcomposite1
+    - libxdamage1
+    - libxrandr2
+    - libgbm1
+    - libxss1
+    - libasound2
+rpm:
+  artifactName: Ingame-Twitch-Chat-${version}.${ext}
+  depends:
+    - gtk3
+    - libnotify
+    - nss
+    - libXScrnSaver
+    - libXtst
+    - xdg-utils
+    - at-spi2-atk
+    - libdrm
+    - libXcomposite
+    - libXdamage
+    - libXrandr
+    - mesa-libgbm
+    - alsa-lib
+
+# Configurações gerais
+npmRebuild: false
+buildDependenciesFromSource: false
+nodeGypRebuild: false
+compression: maximum
+removePackageScripts: true
+
+# Configurações para auto-update
+publish:
+  provider: github
+  releaseType: release
+  owner: romulando
+  repo: ingame-twitch-chat
+
+# Configurações específicas para Windows auto-update
+win:
+  icon: icon.ico
+  executableName: Ingame Twitch Chat
+  requestedExecutionLevel: asInvoker
+  publisherName: devrogerinho.com
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+
