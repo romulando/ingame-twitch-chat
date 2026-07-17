@@ -1,6 +1,8 @@
-# BooChat
+# Ingame Twitch Chat
 
-BooChat captura o chat da Twitch, YouTube e Kick e o exibe de forma transparente na tela. Ideal para streamers que desejam sobrepor o chat nas transmissões sem fundo sólido, permitindo melhor integração com o jogo ou conteúdo exibido.
+Versao pessoal baseada no [BooChat](https://github.com/0rogerinho/boo-chat-tw) por [devrogerinho.com](https://devrogerinho.com).
+
+Captura o chat da Twitch, YouTube e Kick e o exibe de forma transparente na tela. Ideal para streamers que desejam sobrepor o chat nas transmissoes sem fundo solido, permitindo melhor integracao com o jogo ou conteudo exibido.
 
 ## 🚀 Plataformas Suportadas
 
@@ -82,11 +84,12 @@ pnpm format           # Formatação de código
 
 BooChatTW captura o chat da Twitch e o exibe de forma transparente na tela. Ideal para streamers que desejam sobrepor o chat nas transmissões sem fundo sólido, permitindo melhor integração com o jogo ou conteúdo exibido.
 
-# Download
+## Download
 
-- Executável (.exe): BooChatTW 1.0.0 - Setup
+Baixe a versao mais recente na [pagina de Releases](https://github.com/romulando/ingame-twitch-chat/releases).
 
-- Versão sem instalação (win-unpacked): BooChatTW Unpacked
+- [Instalador (.exe)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0-setup.exe)
+- [Portable (.exe)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0.exe)
 
 ## Como Utilizar
 
