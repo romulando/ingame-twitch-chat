@@ -3,6 +3,9 @@ import Button from '../../shared/components/Button'
 import { ErrorNotification, SuccessNotification } from '../../shared/components/ErrorNotification'
 import useModel from './hooks/useModel'
 import { playAlertSound, TAlertSound } from '../../shared/constants/alertSounds'
+import twitchLogo from '../../shared/assets/twitch-logo.png'
+import kickLogo from '../../shared/assets/kick-logo.webp'
+import youtubeLogo from '../../shared/assets/youtube-logo.png'
 
 export const Config = () => {
   const {
@@ -33,7 +36,8 @@ export const Config = () => {
       >
         {/* Twitch Channel */}
         <div className="space-y-2">
-          <label className="text-white font-medium text-sm" htmlFor="channel">
+          <label className="text-white font-medium text-sm flex items-center gap-2" htmlFor="channel">
+            <img src={twitchLogo} alt="Twitch" className="w-5 h-5 object-contain" />
             Nome do canal da Twitch
           </label>
           <input
@@ -48,7 +52,8 @@ export const Config = () => {
 
         {/* Kick Channel */}
         <div className="space-y-2">
-          <label className="text-white font-medium text-sm" htmlFor="kick-channel">
+          <label className="text-white font-medium text-sm flex items-center gap-2" htmlFor="kick-channel">
+            <img src={kickLogo} alt="Kick" className="w-5 h-5 object-contain" />
             Nome do canal da Kick
           </label>
           <input
@@ -63,7 +68,8 @@ export const Config = () => {
 
         {/* YouTube Channel */}
         <div className="space-y-2">
-          <label className="text-white font-medium text-sm" htmlFor="youtube-channel">
+          <label className="text-white font-medium text-sm flex items-center gap-2" htmlFor="youtube-channel">
+            <img src={youtubeLogo} alt="YouTube" className="w-5 h-5 object-contain" />
             Nome do canal do YouTube
           </label>
           <input

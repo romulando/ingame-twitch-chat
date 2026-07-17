@@ -173,7 +173,7 @@ export const Chat = () => {
                   <img
                     src={getPlatformLogo(data.platform)}
                     alt={`${data.platform} logo`}
-                    className="w-4 h-4 object-cover rounded-sm"
+                    className="w-4 h-4 object-contain rounded-sm"
                   />
                 </span>
 
