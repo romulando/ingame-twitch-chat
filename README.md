@@ -4,6 +4,19 @@ Versao pessoal baseada no [BooChat](https://github.com/0rogerinho/boo-chat-tw) p
 
 Captura o chat da Twitch, YouTube e Kick e o exibe de forma transparente na tela. Ideal para streamers que desejam sobrepor o chat nas transmissoes sem fundo solido, permitindo melhor integracao com o jogo ou conteudo exibido.
 
+## BooChatTW
+
+BooChatTW captura o chat da Twitch e o exibe de forma transparente na tela. Ideal para streamers que desejam sobrepor o chat nas transmissões sem fundo sólido, permitindo melhor integração com o jogo ou conteúdo exibido.
+
+## Download
+
+Baixe a versao mais recente na [pagina de Releases](https://github.com/romulando/ingame-twitch-chat/releases).
+
+[![⬇ Download ZIP](https://img.shields.io/badge/⬇_Download-ZIP-c23c2a?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/archive/refs/heads/master.zip)
+[![⬇ Instalador .exe](https://img.shields.io/badge/⬇_Instalador-.exe-0078D6?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0-setup.exe)
+[![⬇ Portable .exe](https://img.shields.io/badge/⬇_Portable-.exe-16A34A?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0.exe)
+
+
 ## 🚀 Plataformas Suportadas
 
 - **Windows** (x64, x86)
@@ -80,17 +93,6 @@ pnpm format           # Formatação de código
 - [Guia de Build](docs/BUILD.md) - Instruções detalhadas para build
 - [Configuração da API do YouTube](docs/YOUTUBE_API_SETUP.md) - Setup da API
 
-## BooChatTW
-
-BooChatTW captura o chat da Twitch e o exibe de forma transparente na tela. Ideal para streamers que desejam sobrepor o chat nas transmissões sem fundo sólido, permitindo melhor integração com o jogo ou conteúdo exibido.
-
-## Download
-
-Baixe a versao mais recente na [pagina de Releases](https://github.com/romulando/ingame-twitch-chat/releases).
-
-[![⬇ Download ZIP](https://img.shields.io/badge/⬇_Download-ZIP-c23c2a?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/archive/refs/heads/master.zip)
-[![⬇ Instalador .exe](https://img.shields.io/badge/⬇_Instalador-.exe-0078D6?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0-setup.exe)
-[![⬇ Portable .exe](https://img.shields.io/badge/⬇_Portable-.exe-16A34A?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0.exe)
 
 ## Como Utilizar
 
