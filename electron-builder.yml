@@ -155,6 +155,7 @@ win:
   executableName: Ingame Twitch Chat
   requestedExecutionLevel: asInvoker
   publisherName: devrogerinho.com
+  signAndEditExecutable: false
   target:
     - target: nsis
       arch:

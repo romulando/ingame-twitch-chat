@@ -5,3 +5,5 @@ config.json
 out
 .DS_Store
 *.log*
+src/renderer/src/**/*.js
+*.tsbuildinfo
