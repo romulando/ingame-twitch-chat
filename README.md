@@ -14,7 +14,7 @@ Baixe a versao mais recente na [pagina de Releases](https://github.com/romulando
 
 [![⬇ Download ZIP](https://img.shields.io/badge/⬇_Download-ZIP-c23c2a?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/archive/refs/heads/master.zip)
 [![⬇ Instalador .exe](https://img.shields.io/badge/⬇_Instalador-.exe-0078D6?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.1-setup.exe)
-[![⬇ Portable .exe](https://img.shields.io/badge/⬇_Portable-.exe-16A34A?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame%20Twitch%20Chat%201.0.1.exe)
+[![⬇ Portable .exe](https://img.shields.io/badge/⬇_Portable-.exe-16A34A?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame.Twitch.Chat.1.0.1.exe)
 
 
 ## 🚀 Plataformas Suportadas

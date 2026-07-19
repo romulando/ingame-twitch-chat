@@ -50,9 +50,7 @@ export const createHome = (): BrowserWindow => {
     fullscreen: false,
     show: false,
     ...currentPlatformConfig,
-    skipTaskbar: true,
     focusable: false,
-    type: 'toolbar',
     alwaysOnTop: true,
     minimizable: false,
     webPreferences: {
