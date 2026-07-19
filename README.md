@@ -88,8 +88,9 @@ BooChatTW captura o chat da Twitch e o exibe de forma transparente na tela. Idea
 
 Baixe a versao mais recente na [pagina de Releases](https://github.com/romulando/ingame-twitch-chat/releases).
 
-- [Instalador (.exe)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0-setup.exe)
-- [Portable (.exe)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0.exe)
+[![⬇ Download ZIP](https://img.shields.io/badge/⬇_Download-ZIP-c23c2a?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/archive/refs/heads/master.zip)
+[![⬇ Instalador .exe](https://img.shields.io/badge/⬇_Instalador-.exe-0078D6?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0-setup.exe)
+[![⬇ Portable .exe](https://img.shields.io/badge/⬇_Portable-.exe-16A34A?style=for-the-badge)](https://github.com/romulando/ingame-twitch-chat/releases/latest/download/Ingame-Twitch-Chat-1.0.0.exe)
 
 ## Como Utilizar
 
