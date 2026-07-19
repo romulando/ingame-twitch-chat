@@ -18,7 +18,7 @@ export const registerIPC = (win: BrowserWindow) => {
   })
 
   ipcMain.on('alwaysOnTop', (_event, boolean: boolean) => {
-    win?.setAlwaysOnTop(boolean)
+    win?.setAlwaysOnTop(boolean, 'screen-saver')
   })
 
   ipcMain.on('closeFilePreview', () => {

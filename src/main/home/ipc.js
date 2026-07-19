@@ -12,7 +12,7 @@ export const registerIPC = (win) => {
         showFullscreen ? win.maximize() : win.unmaximize();
     });
     ipcMain.on('alwaysOnTop', (_event, boolean) => {
-        win?.setAlwaysOnTop(boolean);
+        win?.setAlwaysOnTop(boolean, 'screen-saver');
     });
     ipcMain.on('closeFilePreview', () => {
         win?.minimize();

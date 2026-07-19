@@ -44,6 +44,11 @@ export const createHome = () => {
         fullscreen: false,
         show: false,
         ...currentPlatformConfig,
+        skipTaskbar: true,
+        focusable: false,
+        type: 'toolbar',
+        alwaysOnTop: true,
+        minimizable: false,
         webPreferences: {
             preload: join(__dirname, '../preload/index.js'),
             sandbox: false,
@@ -51,6 +56,8 @@ export const createHome = () => {
             nodeIntegration: false
         }
     });
+    win.setAlwaysOnTop(true, 'screen-saver');
+    win.setVisibleOnAllWorkspaces(true);
     win.on('ready-to-show', () => {
         win.show();
     });
