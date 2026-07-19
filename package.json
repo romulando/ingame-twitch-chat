@@ -1,6 +1,6 @@
 {
   "name": "ingame-twitch-chat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ingame Twitch Chat - Chat multiplataforma para streamers (baseado no BooChat por devrogerinho.com)",
   "main": "./out/main/index.js",
   "author": "devrogerinho.com",
