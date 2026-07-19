@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useShowWindowStore } from '../store/useShowWindowStore'
 
 export default function useHeader() {
@@ -11,9 +11,12 @@ export default function useHeader() {
     window.electron.ipcRenderer.send('setIgnoreMouseEvents', showWindow)
   }
 
-  window.electron.ipcRenderer.on('toggle-show-window', () => {
-    handleShowWindow()
-  })
+  useEffect(() => {
+    window.electron.ipcRenderer.on('toggle-show-window', handleShowWindow)
+    return () => {
+      window.electron.ipcRenderer.removeListener('toggle-show-window', handleShowWindow)
+    }
+  }, [showWindow])
 
   const openConfigWindow = () => {
     window.electron.ipcRenderer.send('open-config')
